@@ -17,6 +17,7 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 
 html,
 body {
@@ -30,12 +31,18 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Shrikhand", cursive;
   text-decoration: none;
 }
 
-router-link {
-  text-decoration: none;
+p,
+input,
+label,
+button,
+select {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 </style>

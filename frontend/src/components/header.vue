@@ -4,10 +4,14 @@
       <h1>Quizzical</h1>
     </div>
     <div class="nav">
-      <router-link to="/"><h2>Home</h2></router-link>
-      <router-link to="/createquiz"><h2>Create a Quiz</h2></router-link>
-      <router-link to="/takequiz"><h2>Take a Quiz</h2></router-link>
-      <router-link to="/login"><h2>Login</h2></router-link>
+      <router-link to="/" class="link"><h2>Home</h2></router-link>
+      <router-link to="/createquiz" class="link"
+        ><h2>Create a Quiz</h2></router-link
+      >
+      <router-link to="/takequiz" class="link"
+        ><h2>Take a Quiz</h2></router-link
+      >
+      <router-link to="/login" class="link"><h2>Login</h2></router-link>
     </div>
   </div>
 </template>
@@ -43,6 +47,10 @@ h1 {
   margin: 0px;
   display: flex;
   justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
 }
 
 h2 {
