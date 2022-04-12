@@ -7,21 +7,21 @@ module.exports = {
       correct: true,
       createdAt: new Date(),
       updatedAt: new Date(),
-      quizId: 1
+      questionId: 1
     },
     {
       content: 'Uppsala',
       correct: false,
       createdAt: new Date(),
       updatedAt: new Date(),
-      quizId: 1
+      questionId: 1
     },
     {
       content: 'Luleå',
       correct: false,
       createdAt: new Date(),
       updatedAt: new Date(),
-      quizId: 1
+      questionId: 1
     },
   ]);
   },
