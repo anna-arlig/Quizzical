@@ -2,23 +2,28 @@
 
 module.exports = {
   async up (queryInterface, Sequelize) {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
+    return queryInterface.bulkInsert('Users', [{
+      username: 'John',
+      role: 'user',
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      username: 'Eva',
+      role: 'admin',
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      username: 'Per',
+      role: 'user',
+      createdAt: new Date(),
+      updatedAt: new Date()
+    }
+  ]);
   },
 
   async down (queryInterface, Sequelize) {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    return queryInterface.bulkDelete('Users', null, {});
   }
 };
