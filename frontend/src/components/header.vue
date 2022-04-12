@@ -4,8 +4,9 @@
       <h1>Quizzical</h1>
     </div>
     <div class="nav">
-      <router-link to="/"><h2>Take a Quiz</h2></router-link>
-      <router-link to="/takequiz"><h2>Create a Quiz</h2></router-link>
+      <router-link to="/"><h2>Home</h2></router-link>
+      <router-link to="/createquiz"><h2>Create a Quiz</h2></router-link>
+      <router-link to="/takequiz"><h2>Take a Quiz</h2></router-link>
       <router-link to="/login"><h2>Login</h2></router-link>
     </div>
   </div>
@@ -45,7 +46,6 @@ h1 {
 }
 
 h2 {
-  text-decoration: none;
   margin: 0px;
   padding: 5px;
   font-size: 35px;

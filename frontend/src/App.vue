@@ -32,5 +32,10 @@ h1,
 h2,
 h3 {
   font-family: "Shrikhand", cursive;
+  text-decoration: none;
+}
+
+router-link {
+  text-decoration: none;
 }
 </style>

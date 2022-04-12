@@ -1,9 +1,8 @@
-import Vue from "vue"
-import VueRouter from "vue-router"
-import Home from "../views/Home.vue"
-import TakeQuiz from "../views/TakeQuiz.vue"
-
-Vue.use(VueRouter)
+import { createRouter, createWebHistory } from 'vue-router'
+import Home from '../views/Home.vue'
+import TakeQuiz from '../views/TakeQuiz.vue'
+import CreateQuiz from '../views/CreateQuiz.vue'
+import Login from '../views/Login.vue'
 
 const routes = [
   {
@@ -16,12 +15,21 @@ const routes = [
     name: "TakeQuiz.vue",
     component: TakeQuiz,
   },
- 
+  {
+    path: "/createquiz",
+    name: "CreateQuiz.vue",
+    component: CreateQuiz,
+  },
+  {
+    path: "/login",
+    name: "Login.vue",
+    component: Login,
+  },
 ]
 
-const router = new VueRouter({
-  mode: "history",
-  routes,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes
 })
 
 export default router
